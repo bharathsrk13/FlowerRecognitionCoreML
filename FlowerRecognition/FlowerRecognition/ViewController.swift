@@ -38,7 +38,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     func processImage(ciimageParam : CIImage)
     {
     
-       guard let model = try? VNCoreMLModel(for: FlowerClassifier().model)
+       guard let model = try? VNCoreMLModel(for: bharath().model)
         else{
             fatalError("failed to import model");
         }
